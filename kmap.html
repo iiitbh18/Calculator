@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>2 variables</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/ />
+  </head>
+  <body>
+
+    <table style="border: 0px solid black; position: absolute; top: 100px; left:150px;">
+      <tr>
+        <td style="padding-right: 25px;border: 0px solid black;"><a class="nav" tabindex="-1" href="/">Home</a></td>
+        <td style="padding-right: 5px;border: 0px solid black;"><a class="nav" tabindex="-1" href="/var2.html">2_variables</a></td>
+        <td style="padding-right: 5px;border: 0px solid black;"><a class="nav" tabindex="-1" href="/var3.html">3_variables</a></td>
+        <td style="padding-right: 5px;border: 0px solid black;"><a class="nav" tabindex="-1" href="/var4.html">4_variables</a></td>
+        <td style="padding-right: 5px;border: 0px solid black;"><a class="nav" tabindex="-1" href="/var5.html">5_variables</a></td>
+        <td style="padding-right: 5px;border: 0px solid black;"><a class="nav" tabindex="-1" href="/var6.html">6_variables</a></td>
+      </tr>
+    </table>
+
+    <table style="position: absolute; top: 125px; left: 150px;">
+      <tr>
+        <td style="padding-top: 25px;border: 0px solid black;">Input interface</td>
+        <td style="padding-top: 25px;border: 0px solid black;"><a class="feedback" tabindex="-1" href="/var2.html">Truth Table</a></td>
+        <td style="padding-top: 25px;border: 0px solid black;"><a class="feedback" tabindex="-1" href="/var2kmapx.html">Kmap with Don't cares (SOP)</a></td>
+        <td style="padding-top: 25px;border: 0px solid black;"><a class="feedback" tabindex="-1" href="/var2kmapn.html">Kmap without Don't cares (SOP)</a></td>
+      </tr>
+    </table>
+
+    <h3 style="position: relative;top: 190px; left: 160px;">Truth Table</h3>
+    <form method="post" action="/circuits2">
+    <table style="border-collapse: collapse;position: relative;top: 190px; left: 150px;">
+      <tr><th colspan="3"><input type="submit" tabindex="-1" value="Submit" style="height: 50px;width: 100%;" /></th><th colspan="3">Y</th><th style="border-width: 0px;padding-right: 50px;"><a class="nav" tabindex="-1" href="./var2.html">Reset</a></th><td style="border-width: 0px;"><input type="checkbox" name="highlight" tabindex="-1" /></td><td style="border-width: 0px;text-align: left;">Highlight groups</td><td rowspan="7" colspan="1" style="border-width: 0px;padding-left: 50px;"></td></tr>
+      <tr><th></th><th>A</th><th>B</th><th>0</th><th>1</th><th>x</th><td style="border-width: 0px;"></td><td style="border-width: 0px;border-left: 2px solid black;"><input type="radio" name="calctype" value="sop" tabindex="-1" checked="checked"></td><td style="border-width: 0px; text-align: left;">SOP</td></tr>
+      <tr><td class="even">0</td><td class="even">0</td><td class="even">0</td><td class="even"><input type="radio" name="in0" value="0" checked="checked"></td><td class="even"><input type="radio" name="in0" value="1"></td><td class="even"><input type="radio" name="in0" value="x"></td><td style="border-width: 0px;"></td><td style="border-width: 0px;border-left: 2px solid black;"><input type="radio" name="calctype" value="pos" tabindex="-1" ></td><td style="border-width: 0px;text-align: left;">POS</td></tr>
+      <tr><td class="odd">1</td><td class="odd">0</td><td class="odd">1</td><td class="odd"><input type="radio" name="in1" value="0" checked="checked"></td><td class="odd"><input type="radio" name="in1" value="1"></td><td class="odd"><input type="radio" name="in1" value="x"></td><td style="border-width: 0px;"></td><td style="border-width: 0px;border-left: 2px solid black;"><input type="radio" name="calctype" value="qmm" tabindex="-1" ></td><td style="border-width: 0px;text-align: left;">Quine-McCluskey Method (SOP)</td></tr>
+      <tr><td class="even">2</td><td class="even">1</td><td class="even">0</td><td class="even"><input type="radio" name="in2" value="0" checked="checked"></td><td class="even"><input type="radio" name="in2" value="1"></td><td class="even"><input type="radio" name="in2" value="x"></td><td style="border-width: 0px;"></td><td style="border-width: 0px;"></td><td style="border-width: 0px;"></td></tr>
+      <tr><td class="odd">3</td><td class="odd">1</td><td class="odd">1</td><td class="odd"><input type="radio" name="in3" value="0" checked="checked"></td><td class="odd"><input type="radio" name="in3" value="1"></td><td class="odd"><input type="radio" name="in3" value="x"></td><td style="border-width: 0px;"></td><td style="border-width: 0px;border-left: 2px solid black;"><input type="radio" name="drawtype" value="htmlcss" tabindex="-1" checked="checked"></td><td style="border-width: 0px;text-align: left;">CSS  circuit drawing</td></tr>
+      <tr><td colspan="6"><input type="submit" value="Submit" style="height: 50px;width: 100%;" /></td><td style="border-width: 0px;"></td><td style="border-width: 0px;border-left: 2px solid black;"><input type="radio" name="drawtype" value="ascii" tabindex="-1"></td><td style="border-width: 0px;text-align: left;">ASCII  circuit drawing</td></tr>
+    </table>
+    </form>
+  </body>
+</html>
